@@ -1,0 +1,25 @@
+.navbar-collapse{
+
+    /*background-color: #58af9b;*/
+    color: #fff;
+
+
+}
+
+ul, li.active, a {
+    color: #fff;
+
+}
+
+a.dropdown-toggle{
+    color: #fff;
+
+}
+
+a[title] {
+    color: #fff;
+
+}
+
+
+

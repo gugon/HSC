@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block styles %}
+  {{ super() }}
+
+{% endblock %}
+
+{% block app_content %}
+{% block jumbotron %}
+<div class="jumbotron">
+
+    {% if menu == 0 %}
+        <h2>Bem vindo {{ paciente }} ao Histórico de Saúde Compartilhada</h2>
+    {% elif menu == 1%}
+        <h2>Bem vindo Visitante ao Histórico de Saúde Compartilhada</h2>
+    {% endif %}
+
+
+
+</div>
+{% endblock jumbotron %}
+{% endblock %}
