@@ -9,7 +9,6 @@
 
 {% block styles %}
 {{ super() }}
-
     <link href="{{ url_for('static', filename='images/hand_red.svg') }}" rel=icon />
 
 
@@ -21,7 +20,7 @@
     {% if menu == 0 %}
         {{nav.menunavbar.render()}}
     {% elif menu == 1%}
-        {{nav.menuMedico.render()}}
+        {{nav.menumedico.render()}}
     {% endif %}
 
 
