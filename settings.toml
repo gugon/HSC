@@ -4,4 +4,3 @@ SECRET_KEY = "secreto"
 SQLALCHEMY_TRACK_MODIFICATIONS = false
 UPLOAD_EXTENSIONS = ['.jpg','.png','.gif','.jpeg','.pdf']
 UPLOAD_PATH = 'uploads'
-
