@@ -1,14 +1,27 @@
-# Ignore os arquivos de sistema do Mac
-.DS_store
+# Arquivos de byte compilados
+__pycache__/
 
-# Ignore a pasta node_modules
-node_modules
+# Arquivos gerados pelo sistema operacional
+*.pyc
+*.pyo
+*.pyd
 
-# Ignore todos os arquivos de texto
-#*.txt
-
-# Ignore arquivos relacionados às chaves de API
+# Virtualenv
+venv/
 .env
 
-# Ignore arquivos de configuração de SASS
-.sass-cache
+# Arquivos de configuração
+*.pyc
+
+# Arquivos de log e dados temporários
+*.log
+*.db
+
+# Arquivos gerados pela IDE (substitua 'nome_da_ide/' pelo diretório da sua IDE)
+.ide/
+*.i.ml
+.vscode
+
+# Arquivos específicos do Flask
+instance/
+*.pyc

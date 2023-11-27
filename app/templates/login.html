@@ -33,7 +33,7 @@
                 <p class="description description-primary">Caso seja seu primeiro acesso</p>
                 <p class="description description-primary">Clique em SIGN UP e faça seu cadastro</p>
 {#                <button class="btn btn-primary" value="{{ url_for('cadastroMedico') }}" ></button>#}
-                 <a href="{{ url_for('cadastroRapido') }}"  class="btn btn-primary">
+                 <a href="{{ url_for('patient.quick_registration') }}"  class="btn btn-primary">
                             sign up
                         </a>
             </div>
@@ -66,7 +66,7 @@
 {#                    <a href="{{ form.signin }}"  class="btn btn-second"></a>#}
 
                     <div class="bottom">
-{#                        <a href="{{ url_for('cadastroRapido') }}"  class="btn btn-second">#}
+{#                        <a href="{{ url_for('patient.quick_registration') }}"  class="btn btn-second">#}
 {#                            sign up#}
 {#                        </a>#}
 {#                        {{ form.signin(class="btn btn-second") }}#}

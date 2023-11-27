@@ -7,33 +7,30 @@ def create_nav(app):
     nav.init_app(app)
 
     @nav.navigation()
-    def menunavbar():
+    def menu_navbar():
         menu = Navbar('HSC')
-        menu.items = [View('Home', 'teste'),
+        menu.items = [View('Home', 'auth.start'),
                       Subgroup(
                           'Cadastros',
-                          View('Meus Dados', 'autenticar'),
-                          View('Exames', 'cadastroRapido'),
-                          View('Meus Médicos', 'teste')
-                          # Link('Tech Support', 'https://google.com')
+                          View('Meus Dados', 'patient.personal_registration_menu'),
+                          View('Exames', 'exam.exam_registration_menu'),
+                          View('Meus Médicos', 'doctor.show_doctors')
                       ),
                       Subgroup(
                           'Visualizar Exames',
-                          View('RX', 'teste'),
-                          View('Ressonância Magnética', 'teste'),
-                          # Link('Tech Support', 'https://google.com')
+                          View('RX', 'exam.manage_rx'),
+                          # View('Ressonância Magnética', 'exam.manage_rx'),
                       )
                       ]
 
-        menu.items.append(View('Sair', 'logout'))
+        menu.items.append(View('Sair', 'auth.logout'))
         return menu
 
     @nav.navigation()
-    def menumedico():
-        menu = Navbar('Medico')
-        menu.items = [View('Home', 'teste'),
-                      View('Visualizar Exames', 'teste')
+    def menu_doctor():
+        menu = Navbar('HSC')
+        menu.items = [View('Home', 'auth.login_doctor'),
+                      View('Visualizar Exames', 'doctor.doctor_view')
                       ]
-        menu.items.append(View('Sair', 'logout'))
-        # menu.items.append(Subgroup('Visualizar Exames', View('RX', 'gerenciaRx')))
+        menu.items.append(View('Sair', 'auth.logout'))
         return menu
