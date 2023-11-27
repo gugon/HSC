@@ -1,5 +1,5 @@
 [default]
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://gustavo:123456@localhost:3306/HSC'
+SQLALCHEMY_DATABASE_URI = 'endereço_banco_de_dados'
 SECRET_KEY = "secreto"
 SQLALCHEMY_TRACK_MODIFICATIONS = false
 UPLOAD_EXTENSIONS = ['.jpg','.png','.gif','.jpeg','.pdf']
@@ -11,5 +11,5 @@ MAIL_PORT = 587
 MAIL_USE_TLS = true
 MAIL_USE_SSL = false
 MAIL_USERNAME = "chucrutis64@gmail.com"
-MAIL_PASSWORD = "tffn xscl tcsi qjbx"
+MAIL_PASSWORD = "senhaaaa"
 MAIL_DEFAULT_SENDER = "chucrutis64@gmail.com"
