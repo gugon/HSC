@@ -1,6 +1,9 @@
 # Arquivos de byte compilados
 __pycache__/
 
+# Ignore os arquivos de sistema do Mac
+.DS_store
+
 # Arquivos gerados pelo sistema operacional
 *.pyc
 *.pyo
@@ -25,3 +28,40 @@ venv/
 # Arquivos específicos do Flask
 instance/
 *.pyc
+
+# Ignore arquivos de configuração de SASS
+.sass-cache
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
